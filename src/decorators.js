@@ -71,7 +71,7 @@ const DefaultDecorators = [
                     <button
                       style={self.getButtonStyles(self.props.currentSlide === index)}
                       onClick={self.props.goToSlide.bind(null, index)}>
-                      &bull;
+                      {self.getBullet(index)}
                     </button>
                   </li>
                 )
@@ -112,6 +112,9 @@ const DefaultDecorators = [
           fontSize: 24,
           opacity: active ? 1 : 0.5
         }
+      },
+      getBullet(index) {
+        return '&bull;'
       }
     }),
     position: 'BottomCenter'
