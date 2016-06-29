@@ -928,6 +928,6 @@ Carousel.ControllerMixin = {
       carousels: data
     });
   }
-}
+};
 
 export default Carousel;
